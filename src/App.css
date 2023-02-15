@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    background-color: #1e1e1e;
+
+    font-family: Gotham Circular, sans-serif;
+}
+/* color pallet
+#3a5a40
+#a3b18a
+#dad7cd
+*/
+
+.hero {
+  background-color: aqua;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 50px, 1fr, 50px;
+  grid-template-columns: 100px, 1fr;
+  grid-template-areas: 
+  "header header"
+  "aside  main" 
+  "aside footer ";
+
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+
+  grid-template-columns: 56px, 160px, 1fr;
+
+  
+}
+
+.PlaceLeft {
+  grid-area: aside;
+  display: grid;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+
+}
+
+footer {
+  grid-area: footer;
+}
+
